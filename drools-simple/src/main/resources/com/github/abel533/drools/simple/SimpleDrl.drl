@@ -1,0 +1,12 @@
+package com.github.abel533.drools.simple;
+import com.github.abel533.drools.simple.Person;
+
+rule "test001"
+    no-loop true
+    when
+        $p: Person(name == "张三", age == 30);
+    then
+        $p.setName("李四");
+        update($p);
+        System.out.println("改名后:" + $p.getName());
+end
