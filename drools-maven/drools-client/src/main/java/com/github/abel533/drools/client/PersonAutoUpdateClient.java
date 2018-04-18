@@ -45,15 +45,12 @@ public class PersonAutoUpdateClient {
         L.info("第一次主动执行:");
         runRule(kieContainer.newKieSession("PersonRules"));
         L.info("测试时，你可以修改 drools-rules 项目，然后 mvn install 到本地仓库来查看变化");
-        L.info("按下任何键退出!");
+        L.info("按下任何键退出！");
         try {
             System.in.read();
+            L.info("退出！");
         } catch (IOException e) {
-            e.printStackTrace();
         }
-//        Scanner scanner = new Scanner(System.in);
-//        scanner.next();
-
     }
 
     public static void runRule(KieSession ksession){
