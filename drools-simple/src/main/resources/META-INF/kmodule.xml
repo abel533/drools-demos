@@ -2,6 +2,9 @@
 <kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://www.drools.org/xsd/kmodule">
 
+    <kbase default="true">
+        <ksession name="defaultSession" default="true" type="stateless"/>
+    </kbase>
     <kbase packages="com.github.abel533.drools.simple">
         <ksession name="SimpleSession"/>
     </kbase>
