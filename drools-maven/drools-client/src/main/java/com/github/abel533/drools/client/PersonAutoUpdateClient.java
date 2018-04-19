@@ -22,7 +22,11 @@ public class PersonAutoUpdateClient {
 
     public static final void main(final String[] args) {
         KieServices kieServices = KieServices.Factory.get();
-        ReleaseId releaseId = kieServices.newReleaseId( "com.github.abel33", "drools-rules", "1.0.0-SNAPSHOT" );
+        //版本号介绍: https://docs.jboss.org/drools/release/7.7.0.Final/drools-docs/html_single/index.html#_maven_versions_and_dependencies
+        ReleaseId releaseId = kieServices.newReleaseId(
+                "com.github.abel33",
+                "drools-rules",
+                "[1.0.0-SNAPSHOT,)" );
         KieContainer kieContainer = kieServices.newKieContainer( releaseId );
 
         //监控更新
