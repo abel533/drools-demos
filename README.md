@@ -36,5 +36,4 @@
 
 - `PersonAutoUpdateClient` 示例增加了 [`KieScanner`](https://docs.jboss.org/drools/release/7.7.0.Final/drools-docs/html_single/index.html#_kiescanner_2) 动态监测规则更新。
 
-> `KieSession` 需要在更新后重新获取。
-> `KieSession` 可以很高效的获取，按照文档建议，`KieContainer` 可以作为单例反复使用。`KieSession` 可以反复获取使用。
+> `KieSession` 需要在更新后重新获取，旧的 Session 仍然使用旧的规则，重新获取后可以使用新的规则。
