@@ -6,6 +6,9 @@ import org.kie.api.runtime.StatelessKieSession;
 
 import java.util.Arrays;
 
+/**
+ * https://docs.jboss.org/drools/release/7.7.0.Final/drools-docs/html_single/index.html#_stateless_knowledge_session
+ */
 public class StatelessExample {
     public static void main(String[] args) {
         KieServices kieServices = KieServices.Factory.get();

@@ -8,7 +8,11 @@ import org.kie.api.runtime.rule.FactHandle;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * https://docs.jboss.org/drools/release/7.7.0.Final/drools-docs/html_single/index.html#_stateful_knowledge_session
+ */
 public class StatefulExample {
+
     public static void main(String[] args) {
         KieServices kieServices = KieServices.Factory.get();
         KieContainer kContainer = kieServices.getKieClasspathContainer();
