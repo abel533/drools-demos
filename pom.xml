@@ -10,6 +10,7 @@
     <modules>
         <module>drools-simple</module>
         <module>drools-maven</module>
+        <module>drools-xls</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

@@ -10,6 +10,10 @@
 
 最简单的 drools 示例，可以用于练习规则语法等
 
+## drools-xls
+
+使用决策表的例子，通过 Excel(xls) 批量创建规则。
+
 ## drools-maven 项目
 
 基于 Maven 仓库发布更新规则的项目。
