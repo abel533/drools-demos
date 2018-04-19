@@ -3,7 +3,9 @@
          xmlns="http://www.drools.org/xsd/kmodule">
 
     <kbase default="true">
-        <ksession name="defaultSession" default="true" type="stateless"/>
+        <ksession name="defaultStatelessSession" default="true" type="stateless"/>
+        <ksession name="defaultStatefulSession" default="true" type="stateful"/>
+
     </kbase>
     <kbase packages="com.github.abel533.drools.simple">
         <ksession name="SimpleSession"/>
