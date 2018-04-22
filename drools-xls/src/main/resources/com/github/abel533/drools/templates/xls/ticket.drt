@@ -1,0 +1,27 @@
+template header
+priority
+destination
+cabin
+duration
+food
+movie
+
+package com.github.abel533.drools.templates.xls
+
+import com.github.abel533.drools.xls.Ticket
+template "tickets"
+
+rule "ticket_rules_@{row.rowNumber}"
+    salience @{priority}
+    when
+        ticket: Ticket(
+            destination == "@{destination}"
+            ,cabin == "@{cabin}"
+            ,duration @{duration}
+            );
+    then
+        ticket.setFood(@{food});
+        ticket.setMovie(@{movie});
+        System.out.println("@{destination}");
+end
+end template

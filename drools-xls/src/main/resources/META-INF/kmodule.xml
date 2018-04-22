@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://www.drools.org/xsd/kmodule">
+    <kbase name="templateTicket" packages="com.github.abel533.drools.templates.xls">
+        <ruleTemplate dtable="com/github/abel533/drools/templates/xls/ticket.xls"
+                      template="com/github/abel533/drools/templates/xls/ticket.drt"
+                      row="3"
+                      col="2"/>
+        <ksession name="templateTicket" type="stateless"/>
+    </kbase>
 </kmodule>

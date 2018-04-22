@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://www.drools.org/xsd/kmodule">
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
 
     <kbase default="true">
         <ksession name="defaultStatelessSession" default="true" type="stateless"/>
         <ksession name="defaultStatefulSession" default="true" type="stateful"/>
-
     </kbase>
+
     <kbase packages="com.github.abel533.drools.simple">
         <ksession name="SimpleSession"/>
     </kbase>

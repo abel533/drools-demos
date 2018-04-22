@@ -4,7 +4,7 @@ import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.StatelessKieSession;
 
-public class XlsSample {
+public class XlsExample {
 
     public static void main(String[] args) {
         KieServices kieServices = KieServices.Factory.get();

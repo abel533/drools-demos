@@ -1,6 +1,7 @@
 package com.github.abel533.drools.client;
 
 import com.github.abel533.drools.fact.Person;
+import org.appformer.maven.integration.embedder.MavenSettings;
 import org.kie.api.KieServices;
 import org.kie.api.builder.KieScanner;
 import org.kie.api.builder.ReleaseId;
@@ -21,10 +22,13 @@ public class PersonAutoUpdateClient {
     public static final Logger L = LoggerFactory.getLogger(PersonAutoUpdateClient.class);
 
     public static final void main(final String[] args) {
+        System.setProperty(MavenSettings.CUSTOM_SETTINGS_PROPERTY,
+                "D:\\Program Files\\apache-maven-3.3.3\\conf\\settings.xml");
+
         KieServices kieServices = KieServices.Factory.get();
         //版本号介绍: https://docs.jboss.org/drools/release/7.7.0.Final/drools-docs/html_single/index.html#_maven_versions_and_dependencies
         ReleaseId releaseId = kieServices.newReleaseId(
-                "com.github.abel33",
+                "com.github.abel533",
                 "drools-rules",
                 "[1.0.0-SNAPSHOT,)" );
         KieContainer kieContainer = kieServices.newKieContainer( releaseId );
